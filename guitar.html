@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Guitar</title>
+    <style>
+        body{
+            background: #F3AC3C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            height:100vh;
+        }
+        .container {
+            margin: 0px;
+            width: 310px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+        }
+    
+        .circleOne {
+            background: #998235;
+            height: 120px;
+            width: 120px;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+    
+        .circleOne div {
+            height: 40px;
+            width: 10px;
+            background: #1A4341;
+            left: 50px;
+            position: absolute;
+            border-radius: 999px;
+        }
+    
+        .circleTwo {
+            height: 100px;
+            width: 100px;
+            background: #998235;
+            border-radius: 999px;
+            margin-left: -50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+    
+        }
+    
+        .circleTwo div {
+            border: 5px solid #F3AC3C;
+            height: 40px;
+            width: 40px;
+            border-radius: 999px;
+            background: #1A4341;
+        }
+    
+        .rect {
+            width: 100px;
+            height: 20px;
+            background: #1A4341;
+            margin-left: -1px;
+        }
+    
+        .tuner {
+            width: 40px;
+            height: 30px;
+            background: #998235;
+            border-radius: 9px;
+            margin-left: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+    
+        .string {
+            width: 20px;
+            height: 4px;
+            border-radius: 999px;
+            background: #1A4341;
+            vertical-align: middle;
+            margin: 6px auto;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="circleOne">
+            <div></div>
+        </div>
+        <div class="circleTwo">
+                <div></div>
+        </div>
+        <div class="rect"></div>
+        <div class="tuner">
+            <div>
+                <div class="string"></div>
+                <div class="string"></div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
